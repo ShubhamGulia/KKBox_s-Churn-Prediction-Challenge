@@ -1,3 +1,6 @@
+#Shubham 
+#R project
+
 install.packages("data.table") 
 library(data.table)
 library(dplyr)
@@ -7,7 +10,7 @@ library(readr)
 ## Load data in csv files
 trainfile=fread("train.csv", sep = ",", header= TRUE)
 transactionfile=fread("transactions.csv", sep = ",", header= TRUE) 
-## merge trainfile and transactionfile by "msno" -- Isha
+## merge trainfile and transactionfile by "msno" 
 Data = merge(trainfile, transactionfile, by = "msno", all = FALSE)
 
 ## train the MODEL
